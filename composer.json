@@ -1,8 +1,0 @@
-{
-    "name": "cahueya/community_store_accounting",
-    "description": "Send eInvoices made by CommunityStore",
-    "type": "package",
-    "require": {
-    },
-    "license": "MIT"
-}
