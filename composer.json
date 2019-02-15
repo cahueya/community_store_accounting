@@ -1,5 +1,5 @@
 {
-    "name": "nicolas/community_store_accounting",
+    "name": "cahueya/community_store_accounting",
     "description": "Send eInvoices made by CommunityStore",
     "type": "package",
     "require": {
