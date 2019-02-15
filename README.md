@@ -7,3 +7,5 @@ An addition to the concrete5 community store (https://github.com/concrete5-commu
 ## Installation
 You must install the community store before installing this addon.
 
+## Current Version
+The current version is scoped towards the needs of Italian eAccounting, that is why there are some configuration values (PEC, codice destinatorio) that may be unknown. I plan to localize the package in a way that only those values are shown that are needed in the tax system of where the shop owners reside.
