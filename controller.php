@@ -41,15 +41,11 @@ class Controller extends Package {
 	public function upgrade () {
 		$pkg =parent::upgrade();
 		$pkg = Package::getByHandle($this->pkgHandle);
-
 	}
 
 
     public function on_start()
     {   
         require $this->getPackagePath() . '/vendor/autoload.php';
-
     }
-   
-
 }
