@@ -1,10 +1,8 @@
 <?php
-
-
 namespace Concrete\Package\CommunityStoreAccounting\Controller\SinglePage\Dashboard\Store\Settings;
+
 use Concrete\Package\CommunityStoreAccounting;
 use Concrete\Core\Page\Controller\DashboardPageController;
-//use Config;
 use Core;
 use Package;
 use Concrete\Core\Page\Single as SinglePage;
@@ -13,13 +11,12 @@ defined('C5_EXECUTE') or die("Access Denied.");
 class Accounting extends DashboardPageController
 {
 
-    public function view() {  
-		$pkg = Package::getByHandle('community_store_accounting');
-
+    public function view() {
+        $pkg = Package::getByHandle('community_store_accounting');
         $username = $pkg->getConfig()->get('settings.accounting.username');
         $password = $pkg->getConfig()->get('settings.accounting.password');
-		$submission_method = $pkg->getConfig()->get('settings.accounting.submission_method');
-		$submission_email = $pkg->getConfig()->get('settings.accounting.submission_email');
+        $submission_method = $pkg->getConfig()->get('settings.accounting.submission_method');
+        $submission_email = $pkg->getConfig()->get('settings.accounting.submission_email');
         $APIurl = $pkg->getConfig()->get('settings.accounting.APIurl');
         $APIkey = $pkg->getConfig()->get('settings.accounting.APIkey');
         $startOrder = $pkg->getConfig()->get('settings.accounting.startOrder');
@@ -75,11 +72,6 @@ class Accounting extends DashboardPageController
 
         $this->view();
     }
-
-    
-    
-    
-    
     public function config_saved() {
         $this->set('message', t("Configuration saved"));
         $this->view();
